@@ -27,7 +27,7 @@ Add Input view and Target for UITextField.
 Add Selector for DatePicker ``.valueChange``
 
 ```
-      @objc func fromDatePickerChanged() {
+      @objc func toDatePickerChanged() {
       
        // Add your logic when value changes in UIDatePicker.
       
