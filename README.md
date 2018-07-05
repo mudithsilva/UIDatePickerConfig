@@ -16,7 +16,7 @@ Add Input view and Target for UITextField.
 ```
   func createDatePicker() {
         self.toDatePicker.datePickerMode = .date   // Change Picker type as you want
-        self.toDatePicker.addTarget(self, action: #selector(toDatePickerChanged), for: .valueChanged) // Detect changes DatePicker
+        self.toDatePicker.addTarget(self, action: #selector(toDatePickerChanged), for: .valueChanged) // Detect changes on DatePicker
         self.toDate.inputView = self.toDatePicker  // Connect TextField Input view
   }
 
