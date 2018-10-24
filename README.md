@@ -19,6 +19,13 @@ Add Input view and Target for UITextField.
         self.toDatePicker.addTarget(self, action: #selector(toDatePickerChanged), for: .valueChanged) // Detect changes on DatePicker
         self.toDatePicker.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         self.toDate.inputView = self.toDatePicker  // Connect TextField Input view
+        
+        // Date Validate //
+        let minDate: Date = Date().yearsBack(years: 100)
+        let maxDate: Date = Date().yearsBack(years: 15)
+        
+        self.toDatePicker.minimumDate = minDate
+        self.toDatePicker.maximumDate = maxDate
   }
 
 ```
